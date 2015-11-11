@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_jnt_hanhphuc/models/fields"
+	>
+		<field name="id" type="hidden" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+		
+		<field name="content"
+			type="textarea"
+			rows="10"
+			label="Nội dung"
+			filter="htmlsafe"
+			readonly="true"
+		/>
+
+		<field name="reply_content"
+			type="textarea"
+			cols="30"
+			rows="10"
+			id="introtext"
+			label="Trả lời"
+			filter="htmlsafe"
+		/>
+		
+		<field name="reply_id" type="hidden" default="0" class="readonly" />
+	</fieldset>
+
+</form>

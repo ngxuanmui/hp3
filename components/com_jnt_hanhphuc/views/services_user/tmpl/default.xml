@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: metadata.xml $ -->
+<metadata>
+	<layout title="Services User">
+		<message>
+			<![CDATA[Servies_User]]>
+		</message>
+	</layout>
+	
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+		>
+
+			<field name="id" type="text" label="ID" default="1" readonly="true" />
+		</fieldset>
+	</fields>
+</metadata>

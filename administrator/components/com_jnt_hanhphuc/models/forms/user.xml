@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="user_details">
+		<field name="name" type="text"
+			class="readonly"
+			label="Name"
+			readonly="true"
+			size="30"
+		/>
+
+		<field name="username" type="text"
+			label="Username"
+			readonly="true"
+			class="readonly"
+			size="30"
+		/>
+		
+		<field name="metakey" type="textarea" class="inputbox"
+			rows="3" cols="30" label="JFIELD_META_KEYWORDS_LABEL" />
+
+		<field name="metadesc" type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL"
+			class="inputbox" rows="3" cols="30" />
+
+		<field
+			name="registerDate"
+			type="calendar"
+			class="readonly"
+			label="Registered"
+			readonly="true"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="lastvisitDate"
+			type="calendar"
+			class="readonly"
+			label="Last visit"
+			readonly="true"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="lastResetTime"
+			type="calendar"
+			class="readonly"
+			label="Last reset"
+			readonly="true"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="id"
+			type="text"
+			class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC"
+			default="0"
+			readonly="true"
+			/>
+
+	</fieldset>
+	
+</form>

@@ -1,0 +1,53 @@
+
+@media (min-width: 780px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+#logo { background: url('../images/hanhphuc-logo.png'); width: 202px; height: 69px; float: left; }
+
+.relative { position: relative; }
+.absolute { position: absolue; }
+
+#slider-prev, #slider-next { 
+	position: absolute; 
+	top: 25%; 
+	z-index: 101; 
+	width: 3%; 
+	height: 50%; 
+	background: #EEE;  
+	
+}
+#slider-prev { 
+	left: 15px; 
+	-webkit-border-radius: 0px 10px 10px 0px;
+	-moz-border-radius: 0px 10px 10px 0px;
+	border-radius: 0px 10px 10px 0px;
+}
+#slider-next { 
+	right: 6px; 
+	-webkit-border-radius: 10px 0px 0px 10px;
+	-moz-border-radius: 10px 0px 0px 10px;
+	border-radius: 10px 0px 0px 10px;
+}
+
+.module-business-blog .col-md-4 { padding: 0 5px; }
+.bussiness-blog-box { padding-left: 11px; }
+
+.navbar-button { border: 1px solid #CCC; }
+
+.navbar { margin-bottom: 0; border: none; border-radius: 0; border-bottom: 3px solid #333; }
+
+.servicebox { border: 1px solid #CCC; }
+.servicebox .brand { padding: 5px 5px; min-height: 50px; line-height: 50px; font-size: 0.9em; color: #38792f; }
+.servicebox .brand a {  }
+.servicebox .brand span { line-height: 50px; margin-right: 5px; }
+.servicebox .brand span.brand-img { width: 50px; height: 50px; border: 1px solid #CCC; overflow: hidden; }
+.servicebox h5, .servicebox p { text-align: center;}
+
+.right ul.nav li { text-align: right; border-bottom: 1px solid #c2c2c2; }
+
+.right-sub-title { text-align: right; border-bottom: 2px solid #666; border-top: 1px solid #d4d4d4; padding: 10px 0; color: #cf3b53; }
+
+#albums-wrapper > div { padding: 0; }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: metadata.xml $ -->
+<metadata>
+	<layout title="Custom Categories">
+		<message>
+			<![CDATA[Custom Categories]]>
+		</message>
+	</layout>
+</metadata>

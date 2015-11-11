@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_jnt_hanhphuc/models/fields"
+	>
+		<field name="id" type="hidden" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="title" type="text" class="inputbox" required="true"
+			size="40" label="Tiêu đề" />
+			
+		<field name="alias" type="text" label="JFIELD_ALIAS_LABEL" class="inputbox" size="40" />
+
+		<field name="catid" type="category" extension="com_jnt_hanhphuc.albums"
+			label="Category"
+			class="inputbox"
+			addfieldpath="/administrator/components/com_categories/models/fields"
+		>
+			<option value="">Chọn danh mục</option>
+		</field>
+
+		<field name="images" type="file" class="inputbox"
+			size="40" label="Image" />
+
+		<field name="del_image" type="checkbox" value="1" label="Delete image" />
+		
+		<field name="publish_up" type="calendar" label="Ngày bắt đầu" class="inputbox" size="22"
+			format="%Y-%m-%d" filter="user_utc" />
+			
+		<field name="publish_down" type="calendar" label="Ngày kết thúc" class="inputbox" size="22"
+			format="%Y-%m-%d" filter="user_utc" />
+		
+		<field name="introtext"
+			type="textarea"
+			rows="10"
+			label="Giới thiệu"
+			filter="htmlsafe"
+			required="true"
+		/>
+
+		<field name="introtext"
+			type="textarea"
+			cols="50"
+			rows="10"
+			id="introtext"
+			description="Giới thiệu"
+			filter="htmlsafe"
+			required="true"
+		/>
+
+		<field name="content" type="editor" class="inputbox"
+			label="Nội dung"
+			filter="safehtml" buttons="false" />
+		
+		<field name="images2content" type="front_images2content"
+			label="Images" description="Upload images to content"
+			class="inputbox"
+			addfieldpath="/administrator/components/com_je_content/models/fields/front"
+		/>
+	</fieldset>
+
+</form>

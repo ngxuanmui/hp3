@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: login.xml 19713 2010-12-01 17:01:50Z infograf768 $ -->
+<form>
+	<fieldset name="credentials"
+		label="COM_USERS_LOGIN_DEFAULT_LABEL"	>
+
+        <field name="id" type="hidden"
+			filter="integer"
+		/>
+        
+        <field name="business_id" type="hidden"
+			filter="integer"
+		/>
+		
+		<field name="images2content" type="front_images2content"
+			label="Images" description="Upload images to content"
+			class="inputbox"
+			addfieldpath="/administrator/components/com_je_content/models/fields/front"
+		/>
+        
+		<field name="content" type="editor"
+			label="Nội dung" rows="25"
+			required="true" buttons="false"
+			size="25" filter="safehtml"
+		/>
+        
+	</fieldset>
+	<fieldset>
+		<field name="return" type="hidden" />
+	</fieldset>
+</form>

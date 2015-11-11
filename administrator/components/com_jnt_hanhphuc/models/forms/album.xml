@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_ntrip/models/fields"
+	>
+		<field name="id" type="text" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="name" type="text" 
+				class="input-xxlarge input-large-text"
+			size="40" label="Title" required="true" />
+
+		<field name="alias" type="text" class="inputbox"
+			size="40" label="JFIELD_ALIAS_LABEL" />
+
+		<field name="catid" type="categoryedit" extension="com_jnt_hanhphuc.albums"
+			label="Category"
+			class="inputbox" required="true"
+			addfieldpath="/administrator/components/com_categories/models/fields"
+		>
+			<option value="">- Select Category -</option>
+		</field>
+
+		<field name="images" type="file" class="inputbox"
+			size="40" label="Image" />
+
+		<field name="del_image" type="checkbox" value="1" label="Delete image" />
+
+		<field name="uploadfile" type="uploadfile" />
+
+		<field name="state" type="list"
+			label="JSTATUS"
+			class="inputbox" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+
+		<field name="description" type="editor" class="inputbox"
+			label="JGLOBAL_DESCRIPTION" 
+			filter="JComponentHelper::filterText" buttons="false" />
+		
+		<field name="images2content" type="images2content"
+			label="Images" description="Upload images to content"
+			class="inputbox"
+		/>
+
+	</fieldset>
+
+	<fieldset name="publish"
+		label="Publishing"
+	>
+
+		<field name="created" type="calendar"
+			label="Created"
+			class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" />
+
+	</fieldset>
+
+	<fieldset name="metadata"
+		label="JGLOBAL_FIELDSET_METADATA_OPTIONS"
+	>
+
+		<field name="metakey" type="textarea" class="inputbox"
+			rows="3" cols="30" label="JFIELD_META_KEYWORDS_LABEL"
+			description="COM_NTRIP_FIELD_METAKEYWORDS_DESC" />
+
+		<field name="metadesc" type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC"
+			class="inputbox" rows="3" cols="30" />
+
+	</fieldset>
+
+</form>

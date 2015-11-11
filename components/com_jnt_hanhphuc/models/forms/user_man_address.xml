@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="user_man_addresses"
+		addfieldpath="/administrator/components/com_jnt_hanhphuc/models/fields"
+	>
+		<field name="id" type="hidden" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="subname" type="text" class="inputbox"
+    		size="40" label="Tên cơ sở" />
+			
+		<field name="address" type="text" class="inputbox" required="true"
+			size="40" label="Địa chỉ" />
+			
+		<field
+				name="city"
+				type="location"
+                location_type="province"
+				id="city"
+				filter="string"
+				label="Tỉnh/Thành Phố"
+				message="Tỉnh/Thành Phố"
+				size="1"
+
+			/>
+	        <field
+				name="district"
+				type="location"
+                location_type="district"
+                location_parent_field="city"
+                location_parent_column="province_id"
+				id="district"
+				filter="string"
+				label="Quận/Huyện"
+				message="Quận/Huyện"
+				size="1"
+			/>
+            
+        <field name="phone" type="text" class="inputbox"
+    		size="40" label="Điện thoại" />
+        
+        <field name="fax" type="text" class="inputbox"
+    		size="40" label="Fax" />
+            
+        <field name="hotline" type="text" class="inputbox"
+    		size="40" label="Hot line" />
+			
+		<field name="state" type="list"
+			label="Hiển thị"
+			class="inputbox" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+		
+		<field name="sticky" type="list" default="0"
+			label="Mặc định"
+			description="Địa chỉ mặc định"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+	</fieldset>
+
+</form>

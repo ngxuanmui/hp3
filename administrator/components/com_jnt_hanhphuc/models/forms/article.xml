@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_jnt_hanhphuc/models/fields"
+	>
+		<field name="id" type="hidden" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="title" type="text" class="inputbox" required="true"
+			size="40" label="Tiêu đề" />
+			
+		<field name="alias" type="text" label="JFIELD_ALIAS_LABEL" class="inputbox" size="40" />
+
+		<field name="catid" type="category" extension="com_jnt_hanhphuc.albums"
+			label="Category"
+			class="inputbox"
+			addfieldpath="/administrator/components/com_categories/models/fields"
+		>
+			<option value="">Chọn danh mục</option>
+		</field>
+
+		<field name="images" type="file" class="inputbox"
+			size="40" label="Image" />
+
+		<field name="del_image" type="checkbox" value="1" label="Delete image" />
+		
+		<field name="publish_up" type="calendar" label="Ngày bắt đầu" class="inputbox" size="22"
+			format="%Y-%m-%d" filter="user_utc" />
+			
+		<field name="publish_down" type="calendar" label="Ngày kết thúc" class="inputbox" size="22"
+			format="%Y-%m-%d" filter="user_utc" />
+		
+		<field name="introtext"
+			type="editor"
+			cols="100"
+			rows="10"
+			id="introtext"
+			label="Giới thiệu"
+			filter="htmlsafe"
+			required="true"
+		/>
+
+		<field name="content" type="editor" class="inputbox"
+			label="Nội dung"
+			filter="safehtml" buttons="false" />
+		
+		<field name="images2content" type="front_images2content"
+			label="Images" description="Upload images to content"
+			class="inputbox"
+			addfieldpath="/administrator/components/com_je_content/models/fields/front"
+		/>
+	</fieldset>
+	
+	<fieldset name="publish"
+		label="Publishing"
+	>
+	
+		<field name="created_by" type="user"
+			label="Created by" />
+
+		<field name="created" type="calendar"
+			label="Created"
+			class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" />
+
+		<field name="publish_up" type="calendar"
+			label="Publish up"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" />
+
+		<field name="publish_down" type="calendar"
+			label="Publish down" 
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" />
+
+	</fieldset>
+
+	<fieldset name="metadata"
+		label="JGLOBAL_FIELDSET_METADATA_OPTIONS"
+	>
+
+		<field name="metakey" type="textarea" class="inputbox"
+			rows="3" cols="30" label="JFIELD_META_KEYWORDS_LABEL"
+			description="COM_JE_CONTENT_FIELD_METAKEYWORDS_DESC" />
+
+		<field name="metadesc" type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC"
+			class="inputbox" rows="3" cols="30" />
+
+	</fieldset>
+
+</form>

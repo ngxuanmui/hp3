@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: metadata.xml $ -->
+<metadata>
+	<layout title="Services">
+		<message>
+			<![CDATA[Servies]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+		>
+
+			<field name="id" type="category"
+				description="JGLOBAL_CHOOSE_CATEGORY_DESC"
+				extension="com_jnt_hanhphuc"
+				label="JGLOBAL_CHOOSE_CATEGORY_LABEL"
+			>
+				<option value="">All Categories</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

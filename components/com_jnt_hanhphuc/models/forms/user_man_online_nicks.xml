@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_jnt_hanhphuc/models/fields"
+	>
+		<field name="id" type="hidden" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="nick_yahoo" type="text" class="inputbox"
+			size="40" label="Nick Yahoo" />
+			
+		<field name="nick_skype" type="text" class="inputbox"
+			size="40" label="Nick Skype" />
+			
+		<field name="nick_fb" type="text" class="inputbox"
+			size="40" label="Nick Facebook" />
+			
+		<field name="nick_yahoo_alias" type="text" class="inputbox"
+			size="40" label="Nick Yahoo Alias" />
+			
+		<field name="nick_skype_alias" type="text" class="inputbox"
+			size="40" label="Nick Skype Alias" />
+			
+		<field name="nick_fb_alias" type="text" class="inputbox"
+			size="40" label="Nick Facebook Alias" />
+
+	</fieldset>
+
+</form>

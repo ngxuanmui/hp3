@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: config.xml 19439 2010-11-10 15:42:23Z chdemko $ -->
+<config>
+	<fieldset
+		name="jnt_hanhphuc"
+		label="Hình thức thanh toán"
+		description="Hình thức thanh toán">
+
+		<field
+			name="payment_method_1" type="textarea"
+			label="Tài khoản ngân hàng"
+			rows="6"
+			cols="60"
+		/>
+		
+		<field
+			name="payment_method_2" type="textarea"
+			label="Qua bưu điện"
+			rows="6"
+			cols="60"
+		/>
+		
+	</fieldset>
+	
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			validate="rules"
+			component="com_jnt_hanhphuc"
+			section="component" />
+	</fieldset>
+</config>

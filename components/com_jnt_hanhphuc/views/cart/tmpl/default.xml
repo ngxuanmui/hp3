@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: metadata.xml $ -->
+<metadata>
+	<layout title="com_jnt_hanhphuc_shopping_cart_view_default_title">
+		<message>
+			<![CDATA[Shopping Cart]]>
+		</message>
+	</layout>
+</metadata>

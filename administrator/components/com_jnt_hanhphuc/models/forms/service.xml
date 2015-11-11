@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">
+        <field name="id" type="text" default="0"
+               readonly="true" class="readonly"
+               label="ID" 	description ="ID" />
+
+        <field name="category" type="category" extension="com_jnt_hanhphuc"
+               label="JCATEGORY"
+               class="inputbox" required="true" />
+
+        <field name="business_id" type="user" default="0"
+               readonly="false" class="inputbox"
+               label="Business" />
+
+        <field name="name" type="text" default=""
+        		size="40"
+				required="true"
+				class="input-xxlarge input-large-text"
+				label="Service Name"  />
+
+        <field name="price" type="text" default="0"
+               class="inputbox"
+               label="Price" />
+
+        <field name="current_price" type="text" default="0"
+               readonly="false" class="inputbox"
+               label="Current price" />
+
+        <field name="promotion" type="text" default=""
+               readonly="false" class="inputbox"
+               label="promotion" />
+
+        <field name="description" type="editor" default="0"
+               filter = "SAFEHTML"
+               readonly="true" class="inputbox"
+               label="Description" />
+
+        <field name="payment_type" type="list" default="0"
+               size="3"
+               multiple="true"
+               class="inputbox"
+               label="Payment type" 	description ="Payment type">
+                    <option value="1">Chuyển tiền qua bưu điện</option>
+                    <option value="2">Chuyển khoản ngân hàng</option>
+                    <option value="3">Thanh toán qua website NgânLượng</option>
+        </field>
+
+        <field name="state" type="list"
+			label="JSTATUS" description="COM_BANNERS_FIELD_STATE_DESC"
+			class="chzn-color-state"
+			size="1" default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+
+    </fieldset>
+
+    <fieldset name="publish"
+              label="COM_BANNERS_GROUP_LABEL_PUBLISHING_DETAILS">
+
+        <field name="created" type="calendar"
+              readonly = "true"
+              label="Created" description="Created"
+              class="readonly" size="22" format="%Y-%m-%d %H:%M:%S"
+              filter="user_utc" />
+        <field name="created_by" type="user"
+               readonly = "true"
+               label="Created By" description="Created"
+               class="readonly" size="22"/>
+
+        <field name="modified" type="calendar"
+               readonly = "true"
+               label="Modified"
+               class="readonly" size="22" format="%Y-%m-%d %H:%M:%S"
+               filter="user_utc" />
+        <field name="modified_by" type="user"
+               readonly = "true"
+               label="Modified By"
+               class="readonly" size="22"/>
+    </fieldset>
+
+	<fieldset name="metadata"
+		label="JGLOBAL_FIELDSET_METADATA_OPTIONS"
+	>
+
+		<field name="metakey" type="textarea" class="inputbox"
+			rows="3" cols="30" label="JFIELD_META_KEYWORDS_LABEL"
+			description="COM_NTRIP_FIELD_METAKEYWORDS_DESC" />
+
+		<field name="metadesc" type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC"
+			class="inputbox" rows="3" cols="30" />
+
+	</fieldset>
+</form>
